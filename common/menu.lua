@@ -51,7 +51,6 @@ function menu:init(args)
 		{ "media2", env.fm .. " /mnt/media2", micon("folder-bookmarks") },
 		{ "media3", env.fm .. " /mnt/media3", micon("folder-bookmarks") },
 		separator,
-		{ "games", env.fm .. " /mnt/games", micon("folder-bookmarks") },
 		{ "windows", env.fm .. " /mnt/windows", micon("folder-bookmarks") },
 	}
 
