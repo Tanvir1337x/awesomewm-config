@@ -50,8 +50,7 @@ function menu:init(args)
 		{ "media1", env.fm .. " /mnt/media1", micon("folder-bookmarks") },
 		{ "media2", env.fm .. " /mnt/media2", micon("folder-bookmarks") },
 		{ "media3", env.fm .. " /mnt/media3", micon("folder-bookmarks") },
-		separator,
-		{ "windows", env.fm .. " /mnt/windows", micon("folder-bookmarks") },
+		{ "media4", env.fm .. " /mnt/media4", micon("folder-bookmarks") },
 	}
 
 	-- Exit submenu

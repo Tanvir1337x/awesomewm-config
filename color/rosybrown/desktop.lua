@@ -84,7 +84,7 @@ function desktop:init(args)
 			{ meter_function = system.fs_info, maxm = 100, crit = 80, name = "media1", args = "/mnt/media1" },
 			{ meter_function = system.fs_info, maxm = 100, crit = 80, name = "media2", args = "/mnt/media2" },
 			{ meter_function = system.fs_info, maxm = 100, crit = 80, name = "media3", args = "/mnt/media3" },
-			{ meter_function = system.fs_info, maxm = 100, crit = 80, name = "windows", args = "/mnt/windows" },
+			{ meter_function = system.fs_info, maxm = 100, crit = 80, name = "media4", args = "/mnt/media4" },
 		},
 		timeout = 300,
 	}
