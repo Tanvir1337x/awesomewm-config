@@ -77,7 +77,7 @@ function menu:init(args)
 			separator,
 			{ "Terminal", env.terminal, micon("terminal") },
 			{ "Thunar", env.fm, micon("folder") },
-			{ "Firefox", "firefox", micon("firefox") },
+			{ "Firefox ESR", "firefox-esr", micon("firefox") },
 			{ "VSCode", "code", micon("code-editor") },
 			{ "Bluetooth Manager", "blueman-manager", micon("bluetooth") },
 			{ "Wifi Hotspot", "wihotspot-gui", micon("wifi") },
