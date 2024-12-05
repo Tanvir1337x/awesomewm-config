@@ -18,12 +18,10 @@ function autostart.run()
 	-- awful.spawn.with_shell("flashfocus") -- flashfocus daemon
 
 	-- tray
-	--[[
 	-- awful.spawn.with_shell("nm-tray") -- NetworkManager Tray
 	awful.spawn.with_shell("nm-applet") -- NetworkManager Tray
 	awful.spawn.with_shell("pasystray") -- PulseAudio Tray
 	awful.spawn.with_shell("blueman-applet") -- Bluetooth (Blueman) Tray
-	--]]
 
 	-- cloud
 	--[[
