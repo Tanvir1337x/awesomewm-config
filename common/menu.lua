@@ -37,7 +37,7 @@ function menu:init(args)
 
 	-- Nix submenu
 	local nixmenu = {
-		{ "NixOS config", "code /home/user/workspace/development/github/nixos-config/", micon("terminal") },
+		{ "NixOS config", "code /home/user/repositories/tanvir1337x/github/nixos-config", micon("terminal") },
 	}
 
 	-- Places submenu
