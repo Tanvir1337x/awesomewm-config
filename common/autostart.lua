@@ -12,11 +12,6 @@ function autostart.run()
 	awful.spawn.with_shell("xset s off") -- disable X screen saver feature
 	awful.spawn.with_shell("xset r rate 250 50") -- speed up keyboard auto-repeat rate
 
-	-- daemon
-	awful.spawn.with_shell("picom --daemon") -- compositor
-	awful.spawn.with_shell("copyq") -- clipboard manager daemon
-	-- awful.spawn.with_shell("flashfocus") -- flashfocus daemon
-
 	-- tray
 	-- awful.spawn.with_shell("nm-tray") -- NetworkManager Tray
 	awful.spawn.with_shell("nm-applet") -- NetworkManager Tray
@@ -32,6 +27,11 @@ function autostart.run()
 	--]]
 
 	-- apps
+
+	-- daemon
+	awful.spawn.with_shell("picom --daemon") -- compositor
+	awful.spawn.with_shell("copyq")       -- clipboard manager daemon
+	-- awful.spawn.with_shell("flashfocus") -- flashfocus daemon
 end
 
 -- Read and commands from file and spawn them
