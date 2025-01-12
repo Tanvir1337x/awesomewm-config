@@ -22,6 +22,7 @@ function env:init(args)
 	self.alt = args.alt or "Mod1" -- Alt key
 	self.terminal = args.terminal or "kitty"
 	self.fm = args.fm or "thunar"
+	self.user = args.user or os.getenv("USER")
 
 	self.home = os.getenv("HOME")
 	self.themedir = awful.util.get_configuration_dir() .. "themes/" .. self.theme
