@@ -43,14 +43,15 @@ function menu:init(args)
 	-- Places submenu
 	local placesmenu = {
 		{ "Downloads", env.fm .. " downloads", micon("folder-download") },
+		{ "Screenshots", env.fm .. " /home/" .. env.user .. "/media/pictures/screenshots", micon("folder-pictures") },
 		{ "Music", env.fm .. " media/musics", micon("folder-music") },
 		{ "Pictures", env.fm .. " media/pictures", micon("folder-pictures") },
 		{ "Videos", env.fm .. " media/videos", micon("folder-videos") },
 		separator,
-		{ "media1", env.fm .. " /mnt/media1", micon("folder-bookmarks") },
-		{ "media2", env.fm .. " /mnt/media2", micon("folder-bookmarks") },
-		{ "media3", env.fm .. " /mnt/media3", micon("folder-bookmarks") },
-		{ "media4", env.fm .. " /mnt/media4", micon("folder-bookmarks") },
+		{ "media1", env.fm .. " /mnt/" .. "media1", micon("folder-bookmarks") },
+		{ "media2", env.fm .. " /mnt/" .. "media2", micon("folder-bookmarks") },
+		{ "media3", env.fm .. " /mnt/" .. "media3", micon("folder-bookmarks") },
+		{ "media4", env.fm .. " /mnt/" .. "media4", micon("folder-bookmarks") },
 	}
 
 	-- Exit submenu
