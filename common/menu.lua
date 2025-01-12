@@ -54,6 +54,11 @@ function menu:init(args)
 		{ "media4", env.fm .. " /mnt/" .. "media4", micon("folder-bookmarks") },
 	}
 
+	-- Actions submenu
+	local actionsmenu = {
+		{ "Mute/Unmute Audio", "pactl set-sink-mute @DEFAULT_SINK@ toggle", micon("audio-volume-muted") },
+	}
+
 	-- Exit submenu
 	local exitmenu = {
 		{ "Lockscreen", "i3lock-fancy-rapid 5 5", micon("lock") },
@@ -75,6 +80,7 @@ function menu:init(args)
 			{ "NixOS", nixmenu, micon("nix-snowflake") },
 			{ "Applications", appmenu, micon("folder") },
 			{ "Places", placesmenu, micon("folder_home"), key = "c" },
+			{ "Actions", actionsmenu, micon("preferences-system") },
 			separator,
 			{ "Terminal", env.terminal, micon("terminal") },
 			{ "Thunar", env.fm, micon("folder") },
