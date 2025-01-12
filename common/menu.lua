@@ -57,6 +57,16 @@ function menu:init(args)
 	-- Actions submenu
 	local actionsmenu = {
 		{ "Mute/Unmute Audio", "pactl set-sink-mute @DEFAULT_SINK@ toggle", micon("audio-volume-muted") },
+		{
+			"Toggle WiFi",
+			"bash -c 'nmcli radio wifi | grep -q enabled && nmcli radio wifi off || nmcli radio wifi on'",
+			micon("network-wireless"),
+		},
+		{
+			"Toggle Bluetooth",
+			"bash -c 'bluetoothctl show | grep -q Powered: yes && bluetoothctl power off || bluetoothctl power on'",
+			micon("bluetooth"),
+		},
 	}
 
 	-- Exit submenu
