@@ -67,6 +67,7 @@ function menu:init(args)
 			"bash -c 'bluetoothctl show | grep -q Powered: yes && bluetoothctl power off || bluetoothctl power on'",
 			micon("bluetooth"),
 		},
+		{ "Take Screenshot", "flameshot gui", micon("camera-photo") },
 	}
 
 	-- Exit submenu
